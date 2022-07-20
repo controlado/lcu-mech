@@ -130,3 +130,4 @@
 #### Via source:
 - Download the source and Python latest version
 - Paste `pip install -r requirements.txt` in terminal
+- Double-click main.py!
