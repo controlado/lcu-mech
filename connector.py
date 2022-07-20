@@ -83,7 +83,7 @@ class Client:
         }
 
     def __get_lock_file(self) -> list:
-        path_file = "D:/Riot Games/League of Legends/lockfile"
+        path_file = "C:/Riot Games/League of Legends/lockfile"
         with open(path_file, encoding="UTF-8") as lock_file:
             lock_file_data = lock_file.read()
             return lock_file_data.split(":")
