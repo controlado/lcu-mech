@@ -124,5 +124,9 @@
 #
 
 ### Installation:
+#### Via executable (easiest):
+- Check [releases](https://github.com/balasclava/guess-the-word/releases) and download!
+
+#### Via source:
 - Download the source and Python latest version
 - Paste `pip install -r requirements.txt` in terminal
