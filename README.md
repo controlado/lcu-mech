@@ -1,4 +1,4 @@
-# `🦕` `LCU`
+# `🦕` `LCU (Mech)`
 
 ### About me:
 - ![info](https://img.shields.io/static/v1?logo=discord&label=&message=Balaclava%231912&color=00d26a&logoColor=white&style=flat)
