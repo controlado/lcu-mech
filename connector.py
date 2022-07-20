@@ -1,4 +1,5 @@
 from urllib3 import disable_warnings, exceptions
+from tkinter.filedialog import askopenfilename
 from json.decoder import JSONDecodeError
 from contextlib import suppress
 from base64 import b64encode
@@ -83,7 +84,18 @@ class Client:
         }
 
     def __get_lock_file(self) -> list:
-        path_file = "C:/Riot Games/League of Legends/lockfile"
+        if client_path := askopenfilename(
+            title="Escolha o diretório do LeagueClient.",
+            filetypes=[
+                ("LeagueClient", ".exe")
+            ]
+        ):
+            league_path = "/".join(client_path.split('/')[:-1])
+            path_file = f"{league_path}/lockfile"
+
+        else:
+            path_file = "C:/Riot Games/League of Legends/lockfile"
+
         with open(path_file, encoding="UTF-8") as lock_file:
             lock_file_data = lock_file.read()
             return lock_file_data.split(":")
