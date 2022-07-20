@@ -1,4 +1,4 @@
-from connector import Client, Store
+from modules.connector import Client, Store
 
 
 class LCU:

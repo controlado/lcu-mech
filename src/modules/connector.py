@@ -1,5 +1,5 @@
+from tkinter.filedialog import askopenfilename as tk_open_file
 from urllib3 import disable_warnings, exceptions
-from tkinter.filedialog import askopenfilename
 from json.decoder import JSONDecodeError
 from contextlib import suppress
 from base64 import b64encode
@@ -16,7 +16,7 @@ def try_load_content(content: str) -> dict:
 
 
 def select_league_client() -> str:
-    client_path = askopenfilename(
+    client_path = tk_open_file(
         title="Escolha o diretório do LeagueClient.",
         filetypes=[
             ("LeagueClient", ".exe")

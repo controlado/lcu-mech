@@ -1,4 +1,4 @@
-from lcu import LCU
+from modules.lcu import LCU
 
 
 class Tasks(LCU):
