@@ -48,24 +48,24 @@
         do método unlock_champions() da classe.
 
         Todas as tags possíveis no momento: [
-            'ranged',
-            '<<tag>>',
-            'marksmen',
-            'melee',
-            'pusher',
-            'requirement_owned',
-            'void',
-            'marksman',
-            'support',
-            'Zaun',
-            'mage',
-            'recommended',
-            'carry',
-            'fighter',
-            'jungler',
-            'stealth',
-            'assassin',
-            'tank'
+            "ranged",
+            "<<tag>>",
+            "marksmen",
+            "melee",
+            "pusher",
+            "requirement_owned",
+            "void",
+            "marksman",
+            "support",
+            "Zaun",
+            "mage",
+            "recommended",
+            "carry",
+            "fighter",
+            "jungler",
+            "stealth",
+            "assassin",
+            "tank"
         ]
 
         Parâmetros:
@@ -89,6 +89,12 @@
         Para mais informações, consulte a documentação
         do método unlock_champions() da classe.
 
+        Exemplos de nomes de campeões: [
+            "Kayn",
+            "Singed",
+            "Kassadin"
+        ]
+
         Parâmetros:
             names: lista com os nomes dos campeões.
 
@@ -109,6 +115,15 @@
 
         Para mais informações, consulte a documentação
         do método unlock_champions() da classe.
+
+        Todos os valores possíveis no momento: [
+            450,
+            1350,
+            3150,
+            4800,
+            6300,
+            7800
+        ]
 
         Parâmetros:
             ea_cost: quantidade de essência azul.
