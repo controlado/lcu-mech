@@ -15,6 +15,16 @@ def try_load_content(content: str) -> dict:
         return loads(content)
 
 
+def select_league_client() -> str:
+    client_path = askopenfilename(
+        title="Escolha o diretório do LeagueClient.",
+        filetypes=[
+            ("LeagueClient", ".exe")
+        ]
+    )
+    return "/".join(client_path.split('/')[:-1])
+
+
 class Store:
 
     def __init__(self, store_url: str, token: str):
@@ -86,14 +96,8 @@ class Client:
     def __get_lock_file(self) -> list:
         print("Por favor, selecione o arquivo LeagueClient.exe")
 
-        if client_path := askopenfilename(
-            title="Escolha o diretório do LeagueClient.",
-            filetypes=[
-                ("LeagueClient", ".exe")
-            ]
-        ):
-            league_path = "/".join(client_path.split('/')[:-1])
-            path_file = f"{league_path}/lockfile"
+        if client_path := select_league_client():
+            path_file = f"{client_path}/lockfile"
 
         else:
             path_file = "C:/Riot Games/League of Legends/lockfile"
