@@ -84,6 +84,8 @@ class Client:
         }
 
     def __get_lock_file(self) -> list:
+        print("Por favor, selecione o arquivo LeagueClient.exe")
+
         if client_path := askopenfilename(
             title="Escolha o diretório do LeagueClient.",
             filetypes=[

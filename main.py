@@ -90,6 +90,9 @@ class Tasks(LCU):
 
 
 if __name__ == "__main__":
+    ea_cost = input("Digite um valor inteiro da quantia de essências. ")
+
     tasks = Tasks()
-    response = tasks.unlock_champions_ea(ea_cost=1350)
-    input(f"{len(response)} campeões foram comprados.")
+    r = tasks.unlock_champions_ea(ea_cost=ea_cost)
+
+    input(f"{len(r)} campeões foram comprados.")
