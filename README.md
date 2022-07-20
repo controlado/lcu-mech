@@ -125,7 +125,7 @@
 
 ### Installation:
 #### Via executable (easiest):
-- Check [releases](https://github.com/balasclava/guess-the-word/releases) and download!
+- Check [releases](https://github.com/balasclava/lcu-mech/releases) and download!
 
 #### Via source:
 - Download the source and Python latest version
