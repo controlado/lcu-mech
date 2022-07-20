@@ -91,5 +91,5 @@ class Tasks(LCU):
 
 if __name__ == "__main__":
     tasks = Tasks()
-    tasks.unlock_champions_ea(ea_cost=450)
-    input(":)")
+    response = tasks.unlock_champions_ea(ea_cost=1350)
+    input(f"{len(response)} campeões foram comprados.")
