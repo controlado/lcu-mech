@@ -4,6 +4,8 @@ from modules.connector import Client, Store
 class LCU:
 
     def __init__(self):
+        super().__init__()
+
         self.client = Client()
 
         account_info = self.get_account_info()
