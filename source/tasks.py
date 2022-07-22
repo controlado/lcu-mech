@@ -106,8 +106,8 @@ class Tasks(LCU):
 
 if __name__ == "__main__":
     tasks = Tasks()
-    response = tasks.unlock_champions_ea(
-        int(input("Digite um valor inteiro da quantia de essências "))
-    )
+
+    print("Digite um valor inteiro da quantia de essências")
+    response = tasks.unlock_champions_ea(int(input("Essência: ")))
 
     input(f"{len(response)} campeões foram comprados!")
